@@ -2,7 +2,7 @@ name: run main.py
 
 on:
   schedule:
-    - cron: '0 10 * * *' # At 00:00 on Monda
+    - cron: '*/2 * * * *' # At 00:00 on Monda
 
 jobs:
   build:
