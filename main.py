@@ -149,17 +149,10 @@ words = getWords()
 url = "/macros/s/AKfycbylr-wMNGwyOHi7yrD1pMGoD5ixLZ_3BVeD_T2rWREdr1z-fPlaDeuntEsnAghAloDUEQ/exec"
 response = getScript(url)
 data=json.loads(response.read())
-#ht
-conn = http.client.HTTPSConnection("httpbin.org")
-conn.request("GET", "/ip")
+#ht0
 
-res = conn.getresponse()
-data1 = res.read().decode("utf-8")
-ip_address = json.loads(data1)['origin']
 
-logger.info( ip_address)
 
-logger.info("test")
 
 t1 = threading.Thread(target=runUsPc, args=(35,1,25))
 t2 = threading.Thread(target=runUsPc, args=(35,26,50))
